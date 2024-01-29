@@ -12,6 +12,7 @@ public class UserRequest {
     private final String username;
     @NotBlank(message = "Email should not be blank")
     @Email(message = "Email should be valid", regexp = ".+@.+\\..+")
+
     private final String email;
     @NotBlank(message = "Password should not be blank")
     @Size(min = 4, message = "Password should be greater than 4 characters long")
